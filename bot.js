@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const prefix = ":";
+const prefix = "</>";
 
 
 bot.on('ready', () => {
 console.log(`Discord bot loaded! Serves ${bot.guilds.size} guilds with ${bot.users.size} users.`)
 // Discord activity
-bot.user.setActivity(`CodeCavern | :help`)
+bot.user.setActivity(`CodeCavern | </>help`)
 // Discord Status
 bot.user.setStatus('online')
 });
@@ -28,7 +28,7 @@ bot.on('message', message => {
 if(command === 'help') {
   const helpembed = new Discord.RichEmbed()
   .setColor(3447003)
-  .addField('Commands:', ':ping - Grab bot ping \n:startsupport [support room] [text] - Get coding support')
+  .addField('Commands:', '</>ping - Grab bot ping \n</>startsupport [support room] [text] - Get coding support')
 
   message.channel.send({embed: helpembed});
 }
