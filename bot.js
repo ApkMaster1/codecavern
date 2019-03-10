@@ -40,7 +40,8 @@ if(command === 'startsupport') {
   .addField('Coding Support', `Someone needs help in support room: \n${text}`)
 
   message.channel.send(`Got it, we will help you with: \n${text}`)
-  bot.channels.get('554340395962597378').send(` @Dev Supporter \n${supportembed}`);
+  bot.channels.get('554340395962597378').send(`@Supporter`);
+  bot.channels.get('554340395962597378').send({embed: supportembed});
 }
 
 
