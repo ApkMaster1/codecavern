@@ -37,10 +37,10 @@ if(command === 'startsupport') {
   var text = message.content.split (' ').slice(1).join(' ')
   const supportembed = new Discord.RichEmbed()
   .setColor(3447003)
-  .addField('Coding Support', `Someone needs help in support room \n${text}`)
+  .addField('Coding Support', `Someone needs help in support room: \n${text}`)
 
   message.channel.send(`Got it, we will help you with: \n${text}`)
-  bot.channels.get('554340395962597378').send({embed: supportembed});
+  bot.channels.get('554340395962597378').send(` @Dev Supporter \n${embed: supportembed}`);
 }
 
 
